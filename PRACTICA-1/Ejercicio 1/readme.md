@@ -23,13 +23,13 @@ Después de crear el proyecto, en la interfaz de Android Studio, en la barra lat
 
 
 Ilustración 4: Pantalla principal de Android Studio 
-![Image](https://github.com/user-attachments/assets/c8bd67b6-8edc-4c24-b2a2-a6b07f3b735e)
+![Image](https://github.com/user-attachments/assets/64de3013-229f-4218-b125-bf9568b2aa84)
 Al dar clic en “Add New Device” se desplegará un menú emergente, en el cual daremos clic en “Create virtual device” (Ilustración 5). Posteriormente, al elegir un dispositivo, se pedirá elegir una API de Android; por defecto, puede descargarse la API con la que funciona el dispositivo en la realidad; sin embargo, puede elegirse a gusto del desarrollador. Para este ejemplo, se continuará con el API 36 (Ilustración 6). 
 Hay más configuraciones adicionales, como la cantidad de almacenamiento interno del dispositivo, memoria RAM del dispositivo anfitrión que se puede utilizar, cantidad de almacenamiento externo, entre otras. 
 
 
 Ilustración 5: Selección del dispositivo para la emulación. 
-
+![Image](https://github.com/user-attachments/assets/8a65737c-8c90-463e-8fb9-06e050a4e627)
 
 Ilustración 	6: 	Selección 	del 	nivel 	de 	API  
 La imagen del dispositivo se descargará y finalmente tendremos el emulador disponible para ejecutar las aplicaciones que se desarrollen (Ilustración 7). 
@@ -37,3 +37,4 @@ La imagen del dispositivo se descargará y finalmente tendremos el emulador disp
 
 Ilustración 7: Ejecuión de la aplicación Hello Android. 
 ![Image](https://github.com/user-attachments/assets/7d89d3d1-4d64-46ca-99e8-1d234e8fe3c2)
+
