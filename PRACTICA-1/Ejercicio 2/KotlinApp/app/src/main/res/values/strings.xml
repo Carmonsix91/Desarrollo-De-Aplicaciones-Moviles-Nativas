@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KotlinApp</string>
+    <string name="textfields_title">TextFields</string>
+    <string name="buttons_title">Botones</string>
+    <string name="selection_title">Selección</string>
+    <string name="lists_title">Listas</string>
+    <string name="information_title">Información</string>
+</resources>
