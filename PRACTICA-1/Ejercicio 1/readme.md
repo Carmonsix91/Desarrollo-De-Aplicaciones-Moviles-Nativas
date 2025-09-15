@@ -7,6 +7,7 @@ En este primer ejercicio, deberás instalar y configurar las siguientes herramie
 Despues de darcargar el instalador, la instalación es como la de cualquier otro programa, lo importante es demostrar como crear un proyecto y un emulador, lo cual se ilustra en la ilustración 1. 
 
 **Ilustración 1: Página oficial de android developers**
+<img width="600" height="400" alt="Image" src="https://github.com/user-attachments/assets/0c4fcf42-59c8-4502-96a3-7469fd6a6fcf" />
 	
    **Configuración del IDE**: Configuré el SDK de Android, creé un dispositivo virtual (emulador) y verifiqué que funciona correctamente ejecutando una aplicación de prueba. 
 
@@ -37,4 +38,5 @@ La imagen del dispositivo se descargará y finalmente tendremos el emulador disp
 
 Ilustración 7: Ejecuión de la aplicación Hello Android. 
 ![Image](https://github.com/user-attachments/assets/7d89d3d1-4d64-46ca-99e8-1d234e8fe3c2)
+
 
