@@ -60,10 +60,6 @@ Esta versión utiliza la arquitectura recomendada por Android con Activities y F
 *   Manejo adecuado del ciclo de vida de los Fragments y la Activity.
 *   (Opcional, pero recomendado) Uso de **ViewModels** para separar la lógica de UI de los datos, especialmente si hay interacciones complejas o se necesita persistir el estado.
 
----
-
----
-
 ## 🚀 Cómo Ejecutar
 
 ### Android Nativo (Kotlin)
