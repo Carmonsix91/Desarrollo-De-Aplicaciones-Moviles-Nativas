@@ -1,5 +1,5 @@
 # KOTLIN
-## 🌟 Características Comunes
+## 🌟 Características 
 
 *   **Navegación Intuitiva:** Un menú principal (usando BottomNavigationBar o similar) permite al usuario cambiar fácilmente entre las diferentes secciones/fragments.
 *   **Contenido Educativo por Sección:** Cada sección (Fragment en Android Nativo, Pantalla/Widget en Flutter) está diseñada para:
@@ -71,9 +71,11 @@ Esta versión utiliza la arquitectura recomendada por Android con Activities y F
 5.  Ejecuta la configuración de la aplicación 'app'.
 ---
 
-## 💡 Funcionalidad que Conecte Diferentes Fragments/Pantallas (Ejemplo)
+## 💡 Funcionalidad que Conecte Diferentes Fragments/Pantallas 
 
 Para cumplir con el requisito de "Funcionalidad que conecte diferentes fragments", se podría implementar:
 
 *   **En Android Nativo:** Desde el `ButtonsFragment`, un botón podría navegar al `InfoElementsFragment` pasando un argumento (ej. un string) que se muestre en un `TextView` de ese fragmento. Esto se puede lograr con el Navigation Component y Safe Args.
+
+  https://github.com/user-attachments/assets/ce3bdfc8-0a83-4a64-9ee4-3a8e4e3c3ec2
 
