@@ -77,5 +77,7 @@ Para cumplir con el requisito de "Funcionalidad que conecte diferentes fragments
 
 *   **En Android Nativo:** Desde el `ButtonsFragment`, un botón podría navegar al `InfoElementsFragment` pasando un argumento (ej. un string) que se muestre en un `TextView` de ese fragmento. Esto se puede lograr con el Navigation Component y Safe Args.
 
-  https://github.com/user-attachments/assets/ce3bdfc8-0a83-4a64-9ee4-3a8e4e3c3ec2
+
+https://github.com/user-attachments/assets/e33ddb91-9d8c-4202-a5af-892ae48b26b3
+
 
