@@ -71,4 +71,4 @@ Para cumplir con el requisito de "Funcionalidad que conecte diferentes fragments
 Este README proporciona una visión general del proyecto, su estructura y cómo interactuar con él. ¡Explora las diferentes secciones para aprender sobre los elementos de UI!
 
 
-https://github.com/user-attachments/assets/8ef0776e-fdcf-4c7c-9978-aca3575251a0
+https://github.com/user-attachments/assets/21dbe00b-ad4e-4b3e-98de-785b207d9a75
