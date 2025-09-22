@@ -5,4 +5,5 @@
     <string name="selection_title">Selección</string>
     <string name="lists_title">Listas</string>
     <string name="information_title">Información</string>
+    <string name="title_activity_second">SecondActivity</string>
 </resources>

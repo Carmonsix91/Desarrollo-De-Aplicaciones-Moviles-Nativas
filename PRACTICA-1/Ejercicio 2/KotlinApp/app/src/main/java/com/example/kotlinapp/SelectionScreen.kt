@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
@@ -22,7 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun SelectionScreen() {
+fun SelectionScreen(onButtonClick: () -> Unit) {
     var checkboxState by remember { mutableStateOf(false) }
     var radioOption by remember { mutableStateOf("Opción 1") }
     var switchState by remember { mutableStateOf(false) }
@@ -100,6 +101,7 @@ fun SelectionScreen() {
         Text("Checkbox: ${if (checkboxState) "Seleccionado" else "No seleccionado"}")
         Text("Opción seleccionada: $radioOption")
         Text("Switch: ${if (switchState) "Activado" else "Desactivado"}")
+        Button(onButtonClick) { Text("Second Activity") }
     }
 }
 

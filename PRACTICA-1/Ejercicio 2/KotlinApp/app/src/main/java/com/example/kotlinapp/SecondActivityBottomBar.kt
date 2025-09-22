@@ -6,22 +6,21 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 
-
 @Composable
-fun BottomNavigationBar(navController: NavController) {
-    val items = listOf(
-        Screen.TextFields,
-        Screen.Buttons,
-        Screen.Selection,
+fun SecondActivityBottomBar(modifier: Modifier = Modifier, navController: NavController) {
+        val items = listOf(
+        Screen.Lists,
+        Screen.Information
     )
 
-    NavigationBar(containerColor = Color(217, 106, 199)) {
+    NavigationBar(containerColor = Color(255, 152, 0, 255)) {
         val navBackStackEntry = navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry.value?.destination?.route
 
@@ -43,12 +42,4 @@ fun BottomNavigationBar(navController: NavController) {
             )
         }
     }
-}
-
-sealed class Screen(val route: String, val title: Int, val icon: Int) {
-    object TextFields : Screen("textfields", R.string.textfields_title, R.drawable.ic_text_field)
-    object Buttons : Screen("buttons", R.string.buttons_title, R.drawable.ic_button)
-    object Selection : Screen("selection", R.string.selection_title, R.drawable.ic_selection)
-    object Lists : Screen("lists", R.string.lists_title, R.drawable.ic_list)
-    object Information : Screen("information", R.string.information_title, R.drawable.ic_info)
 }
