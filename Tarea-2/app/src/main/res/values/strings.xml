@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MiMascotaVirtual</string>
+    <string name="title_activity_core">CoreActivity</string>
+    <string name="title_activity_play">PlayActivity</string>
+</resources>
