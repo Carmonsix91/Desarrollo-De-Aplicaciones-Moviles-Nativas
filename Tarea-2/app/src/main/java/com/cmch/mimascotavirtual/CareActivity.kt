@@ -1,24 +1,19 @@
+// CareActivity.kt
 package com.cmch.mimascotavirtual
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.ui.Modifier
 import androidx.datastore.preferences.core.edit
-import com.cmch.mimascotavirtual.ui.composable.PlayScreen
+import com.cmch.mimascotavirtual.ui.composable.CareScreen
 import com.cmch.mimascotavirtual.ui.theme.MiMascotaVirtualTheme
-import com.cmch.mimascotavirtual.utils.slideOutRight
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
-class PlayActivity : ComponentActivity() {
+class CareActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -26,8 +21,10 @@ class PlayActivity : ComponentActivity() {
             val preferences = dataStore.data.map { it[IS_DARK_MODE] ?: false }
             val isDarkMode by preferences.collectAsState(initial = false)
             MiMascotaVirtualTheme(darkTheme = isDarkMode) {
-                // Llama a la pantalla de Compose y le pasa la función para volver.
-                PlayScreen(
+                CareScreen(
+                    onBack = {
+                        finish()
+                    },
                     isDarkMode = isDarkMode,
                     onChangeDarkMode = {
                         coroutineScope.launch {
@@ -35,27 +32,9 @@ class PlayActivity : ComponentActivity() {
                                 it[IS_DARK_MODE] = !isDarkMode
                             }
                         }
-                    },
-                    onBack = {
-                        finish() // Cierra esta actividad para regresar a MainActivity.
                     }
                 )
             }
         }
-    }
-
-    // Sobreescribimos el método finish() para aplicar nuestra transición personalizada.
-    override fun finish() {
-        super.finish()
-        // Aplica la animación de deslizamiento hacia la derecha al salir.
-        slideOutRight()
-    }
-
-    // Hacemos lo mismo para el botón de "atrás" del sistema operativo.
-    @SuppressLint("GestureBackNavigation")
-    @Deprecated("Deprecated in Java", ReplaceWith("super.onBackPressed()"))
-    override fun onBackPressed() {
-        super.onBackPressed()
-        slideOutRight()
     }
 }

@@ -22,6 +22,12 @@ La aplicación está estructurada en tres niveles jerárquicos, cada uno en su p
     * Animaciones complejas como la secuencia de "comer" y el seguimiento en el mini-juego.
 * **Mini-Juego Integrado**: Un juego simple pero funcional utilizando `Canvas` y `animateOffsetAsState` en Jetpack Compose.
 
+## 📸 Capturas de Pantalla
+
+| Habitación Principal                                 | Área de Cuidados                                     | Zona de Juegos                                   |
+| :--------------------------------------------------- | :--------------------------------------------------- | :----------------------------------------------- |
+| __             | __        | __       |
+| La pantalla principal con Sparky en el centro.       | La cocina con alimentos interactivos.                | El parque con juguetes y el acceso al mini-juego. |
 
 ## 🚀 Instalación y Ejecución
 
@@ -66,5 +72,3 @@ Se implementaron diversas animaciones para crear una experiencia de usuario flui
 ### 2. Orquestar Secuencias de Animación
 * **Reto**: La animación del perro comiendo requería una secuencia específica: la comida debía moverse a la boca, encogerse, desaparecer y solo entonces la animación debía terminar.
 * **Solución**: Se utilizó un `LaunchedEffect` para controlar la secuencia de forma asíncrona. Se manejó un estado (`animationState`) para definir las fases (inicio, mover, desaparecer). Los `animate*AsState` reaccionaban a los cambios de este estado, y el `LaunchedEffect` se encargaba de cambiar el estado en el momento adecuado usando `delay`s. Esto permitió crear una coreografía de animaciones compleja de manera declarativa.
-
-* https://github.com/user-attachments/assets/25e9cef1-b851-4b73-b81e-a14a35d7a015
